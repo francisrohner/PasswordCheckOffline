@@ -1,0 +1,19 @@
+﻿<Window x:Class="PasswordCheck.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordCheck"
+        mc:Ignorable="d"
+        Title="Password Check" Height="400" Width="450" Closing="Window_Closing" Icon="key.ico">
+    <Grid>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.053,0.969"/>
+        <TextBox x:Name="txtPassword" Height="23" Margin="77,44,6,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="btnInitiate" Content="Check Password" Margin="10,71,6,0" VerticalAlignment="Top" Height="36" Click="BtnInitiate_Click"/>
+        <TextBlock x:Name="blkResults" Margin="10,141,6,6" TextWrapping="Wrap" Background="#FFC1C1C1"/>
+        <ProgressBar x:Name="pbRunning" Height="24" Margin="10,112,6,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFilePath" Height="23" Margin="77,10,6,0" VerticalAlignment="Top" IsReadOnly="True" PreviewMouseUp="TxtFilePath_MouseUp" Text="--Click to browse to file--" />
+        <Label Content="Pass File:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.053,0.969"/>
+
+    </Grid>
+</Window>
