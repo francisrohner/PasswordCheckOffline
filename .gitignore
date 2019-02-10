@@ -1,1 +1,4 @@
 *.user
+.vs/
+PasswordCheck/bin/
+PasswordCheck/obj/
