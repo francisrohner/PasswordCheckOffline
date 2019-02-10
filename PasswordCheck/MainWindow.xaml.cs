@@ -154,7 +154,7 @@ namespace PasswordCheck
                     _result = string.Format("Checked {0} Passwords", _counter);
             }
 
-            if (_result == null || !_result.Equals("Password Found: ("))
+            if (_result == null || !_result.Equals("Password Found :("))
                 _result = "Password Not Found :)";
 
             reader.Close();
